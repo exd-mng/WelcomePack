@@ -1,0 +1,18 @@
+#content {
+	background: white;
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 90%;
+	right: 0;
+	transform: translateX(200%);
+	transition: -webkit-transform .4s linear .2s;
+	transition: transform .4s linear .2s;
+	transition: transform .4s linear .2s, -webkit-transform .4s linear .2s;
+	transition: transform .4s linear .2s, -webkit-transform .4s linear .2s;
+}
+
+.is-active #content {
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}

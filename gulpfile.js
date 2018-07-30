@@ -68,7 +68,7 @@ gulp.task('styles', function () {
   return gulp
     .src('source/scss/**/**/*.scss')
     .pipe(sass())
-    .pipe(cssnano())
+    .pipe(cssnano({ minifyFontValues: false, discardUnused: false }))
     .pipe(prefix(autoprefixerOptions))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist/css'))
