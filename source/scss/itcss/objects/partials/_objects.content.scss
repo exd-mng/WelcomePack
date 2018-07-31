@@ -10,6 +10,7 @@
 	transition: transform .4s linear .2s;
 	transition: transform .4s linear .2s, -webkit-transform .4s linear .2s;
 	transition: transform .4s linear .2s, -webkit-transform .4s linear .2s;
+	will-change: transform;
 }
 
 .is-active #content {

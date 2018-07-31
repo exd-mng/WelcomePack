@@ -1,0 +1,9 @@
+.page {
+  padding: 1.5em;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.is-active .page {
+  overflow-y: scroll;
+}
