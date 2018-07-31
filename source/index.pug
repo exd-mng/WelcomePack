@@ -6,24 +6,24 @@ html(lang='es')
     link(rel='stylesheet', href='css/styles.css')
   body
     section.section.section--home
-      h2!= DATA.home[0].title
-      p!= DATA.home[0].description
+      h2.section__tit!= DATA.home[0].title
+      p.section__txt!= DATA.home[0].description
     section.section.section--mango
-      h2!= DATA.home[1].title
-      p
-        a(href='pages/mango.html')!= DATA.home[1].description
+      h2.section__tit!= DATA.home[1].title
+      p.section__txt
+        a.section__link(href='pages/mango.html')!= DATA.home[1].description
     section.section.section--team
-      h2!= DATA.home[2].title
-      p
-        a(href='pages/team.html')!= DATA.home[2].description
+      h2.section__tit!= DATA.home[2].title
+      p.section__txt
+        a.section__link(href='pages/team.html')!= DATA.home[2].description
     section.section.section--employee
-      h2!= DATA.home[3].title
-      p
-        a(href='pages/employee.html')!= DATA.home[3].description
+      h2.section__tit!= DATA.home[3].title
+      p.section__txt
+        a.section__link(href='pages/employee.html')!= DATA.home[3].description
     main
       #content
       #back
-        button.btn-back Back
+        button.btnBack Back
     script(src='js/vendor/jquery-3.3.1.min.js')
     script(src='js/vendor/jquery.scrollify.js')
     script(src='js/index.js')

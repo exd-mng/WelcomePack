@@ -1,5 +1,5 @@
 #back {
-  background-color: #fff;
+  background-color: var(--color-inverse);
   position: fixed;
   width: 10%;
   height: 100%;
@@ -11,8 +11,7 @@
   opacity: 0;
 	transition: opacity .25s ease-in;
 	will-change: opacity;
-}
-
-.is-active #back {
-  opacity: 1;
+	@at-root .is-active #{&} {
+		opacity: 1;
+	}
 }

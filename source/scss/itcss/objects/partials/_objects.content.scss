@@ -1,19 +1,14 @@
 #content {
-	background: white;
+	background: var(--color-inverse);
 	position: fixed;
 	top: 0;
 	height: 100%;
 	width: 90%;
 	right: 0;
 	transform: translateX(200%);
-	transition: -webkit-transform .4s linear .2s;
 	transition: transform .4s linear .2s;
-	transition: transform .4s linear .2s, -webkit-transform .4s linear .2s;
-	transition: transform .4s linear .2s, -webkit-transform .4s linear .2s;
 	will-change: transform;
-}
-
-.is-active #content {
-	-webkit-transform: translateX(0);
-	transform: translateX(0);
+	@at-root .is-active #{&} {
+		transform: translateX(0);
+	}
 }
