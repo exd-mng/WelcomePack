@@ -14,7 +14,8 @@ var gulp = require('gulp'),
     path = require('path'),
     svgsprite = require('gulp-svg-sprite'),
     bs = require('browser-sync').create(),
-    yaml = require('gulp-yaml');
+    yaml = require('gulp-yaml'),
+    yamlMerge = require('gulp-yaml-merge');
 
   gulp.task('browser-sync', function() {
     bs.init({
@@ -30,12 +31,12 @@ var autoprefixerOptions = {
 
 gulp.task('yaml', function() {
   return gulp
-    .src('source/data/data.yaml')
+    .src('source/data/*.yaml')
     .pipe(yaml({ space: 2 }))
     .pipe(gulp.dest('source/data'))
 });
 
-gulp.task('pug:data', ['yaml'], function() {
+gulp.task('data', ['yaml'], function() {
   return gulp
     .src('source/data/data.json')
     .pipe(merge({
@@ -51,7 +52,7 @@ gulp.task('pug:data', ['yaml'], function() {
     .pipe(gulp.dest('dist/data/'));
 });
 
-gulp.task('html', ['pug:data'], function() {
+gulp.task('html', ['data'], function() {
   return gulp
     .src('source/**/*.pug')
     .pipe(data( function(file) {

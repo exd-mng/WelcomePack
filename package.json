@@ -28,6 +28,7 @@
     "gulp-svg-sprite": "^1.4.0",
     "gulp-uglify": "^3.0.0",
     "gulp-yaml": "^2.0.1",
+    "gulp-yaml-merge": "^1.0.1",
     "jshint": "^2.9.5",
     "jstransformer-markdown-it": "^2.1.0",
     "svgo": "^1.0.5"

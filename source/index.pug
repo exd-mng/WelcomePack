@@ -6,29 +6,20 @@ html(lang='es')
     link(rel='stylesheet', href='css/styles.css')
   body
     section.section.section--home
-      h2
-        | Hey
-        br
-        | buddy!
-      p Welcome, scroll and enjoy.
+      h2!= DATA.home[0].title
+      p!= DATA.home[0].description
     section.section.section--mango
-      h2 A dream come true
+      h2!= DATA.home[1].title
       p
-        a(href='pages/mango.html')
-          | Breve repaso por la historia y los orígenes de MANGO: desde 1984 hasta la actualidad.
+        a(href='pages/mango.html')!= DATA.home[1].description
     section.section.section--team
-      h2 We are creative
+      h2!= DATA.home[2].title
       p
-        a(href='pages/team.html')
-          | ¡Bienvenido a nuestro equipo! Te contamos algunas cosillas sobre nosotros, qué hacemos, cómo trabajamos y alguna que otra curiosidad.
+        a(href='pages/team.html')!= DATA.home[2].description
     section.section.section--employee
-      h2
-        | You, 
-        i us
-        | .
+      h2!= DATA.home[3].title
       p
-        a(href='pages/employee.html')
-          | En palabras de Isak Andic “lo más importante de MANGO es su gente”, en este breve resumen te contamos todo lo que tienes que tener en cuenta ahora que trabajas en MANGO.
+        a(href='pages/employee.html')!= DATA.home[3].description
     main
       #content
       //

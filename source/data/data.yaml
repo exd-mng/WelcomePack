@@ -1,9 +1,18 @@
+home:
+- title: 'Hey<br>buddy!'
+  description: 'Welcome, scroll and enjoy.'
+- title: 'A dream come true'
+  description: 'Breve repaso por la historia y los orígenes de MANGO: desde 1984 hasta la actualidad.'
+- title: 'We are creative'
+  description: '¡Bienvenido a nuestro equipo! Te contamos algunas cosillas sobre nosotros, qué hacemos, cómo trabajamos y alguna que otra curiosidad.'
+- title: 'You, <i>us</i>.'
+  description: 'En palabras de Isak Andic “lo más importante de MANGO es su gente”, en este breve resumen te contamos todo lo que tienes que tener en cuenta ahora que trabajas en MANGO.'
 employee:
-- title: Employee title
-  text: Aliquip eiusmod Lorem quis amet duis laboris ipsum.
+  - title: Employee title 222
+    text: Aliquip eiusmod Lorem quis amet duis laboris ipsum.
 mango:
-- title: Mango title
-  text: Do nulla ullamco duis ea labore velit minim aliquip in id commodo veniam.
+  - title: Mango title 222
+    text: Do nulla ullamco duis ea labore velit minim aliquip in id commodo veniam.
 team:
-- title: Team title
-  text: Officia magna adipisicing voluptate ea consequat anim irure.
+  - title: Team title 222
+    text: Officia magna adipisicing voluptate ea consequat anim irure.
